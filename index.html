@@ -7,36 +7,40 @@
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
         .container { width: 80%; margin: auto; overflow: hidden; }
-        header { background: #333; color: #fff; padding-top: 20px; min-height: 70px; border-bottom: #0779e4 3px solid; }
-        header h1 { text-align: center; margin: 0; }
-        nav ul { background: #555; color: white; list-style: none; padding: 0; }
+        header { background: #f0f0f0; color: #333; padding: 20px 0; text-align: center; }
+        header h1 { margin: 0; display: inline-block; vertical-align: middle; font-size: 24px; }
+        #profile-pic { width: 100px; height: 100px; border-radius: 50%; display: inline-block; vertical-align: middle; margin-right: 20px; }
+        nav { background: #e0e0e0; padding: 10px 0; }
+        nav ul { list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; }
         nav ul li { display: inline; }
-        nav ul li a { color: white; text-decoration: none; padding: 5px 20px; display: inline-block; }
-        #profile-pic { max-width: 150px; max-height: 150px; border-radius: 50%; }
+        nav ul li a { color: #333; text-decoration: none; padding: 10px 20px; display: inline-block; }
+        .social-links img { width: 24px; height: auto; margin: 0 10px; }
         section { margin: 20px 0; }
         footer { background: #333; color: #fff; text-align: center; padding: 10px; margin-top: 20px; }
-        .social-links a { margin-right: 10px; }
-        .certification-logos li { margin-bottom: 10px; }
-        .certification-logos img { width: 50px; height: auto; margin-right: 10px; vertical-align: middle; }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Kalani Prabodha</h1>
+        <img src="Your-image.jpg" alt="Kalani Prabodha" id="profile-pic">
+        <h1>Kalani Prabodha</h1>
+        <div class="social-links">
+         
+            <a href="https://www.linkedin.com/in/kalani-prabodha"><img src="https://icons8.com/icon/xuvGCOXi8Wyg/linkedin" alt="LinkedIn">LinkedIn</a>
+            <a href="https://github.com/kalani9uggalle"><img src="https://icons8.com/icon/AZOZNnY73haj/github" alt="GitHub">GitHub</a>
+            <a href="https://www.hackerrank.com/profile/kalani9uggalle"><img src="https://media.licdn.com/dms/image/D560BAQE8MivsmbT7Ig/company-logo_200_200/0/1705561459405/hackerrank_logo?e=1717027200&v=beta&t=2koigfjY6kyQRmyAmCW9J_p4pJd0bCJ9AqWZdJYNz_Q" alt="HackerRank" alt="Hackerrank">HackerRank</a>
+            <!-- Add more social links as needed -->
+            <!-- Add more social links as needed -->
         </div>
     </header>
 
     <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
     <section id="about" class="container">
