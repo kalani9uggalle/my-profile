@@ -63,27 +63,27 @@ nav ul li a:hover {
 }
 
 /* Adjusting the About Me section container to align content to the left */
-#about {
-    text-align: left;
+/* Container for the profile picture and about me text */
+.about-container {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    margin-bottom: 20px; /* Adds some space below the container */
 }
 
-/* Adjusting the profile picture styles for left alignment */
+/* Profile picture styling */
 #profile-pic {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    display: inline-block; /* Changed from block to inline-block */
-    vertical-align: top; /* Aligns the top of the image with the top of the text */
-    margin-right: 20px; /* Adds some space between the image and the about text */
+    border: 3px solid #0779e4; /* Solid blue border */
+    margin-right: 20px; /* Adds some space to the right of the image */
 }
 
-/* Ensuring social links are aligned with the profile picture */
+/* Social links styling - Ensure they are aligned to the left below the image */
 .social-links {
-    display: inline-block; /* Allows the social links to align next to the profile picture */
-    vertical-align: top; /* Aligns the top of the social links with the top of the profile picture */
-    padding: 0; /* Adjust padding as needed */
-    margin: 0; /* Adjust margin as needed, especially to remove any top margin that may offset alignment */
+    margin-top: 10px; /* Adds some space above the social links */
 }
+
 
 
 .social-links img {
@@ -178,15 +178,20 @@ footer {
 
     <section id="about" class="container">
         <h2>About Me</h2>
-        <img src="67976498.jpg" alt="Kalani Prabodha" id="profile-pic">
-        <p>Kalani Prabodha is a dedicated Data Scientist with a strong background in Software Engineering. With a passion for data-driven solutions and a knack for technology, Kalani excels in transforming complex datasets into actionable insights.</p>
-        <div class="social-links">
+         <div class="about-container">
+        <img src="67976498.jpg" alt="Profile Picture" id="profile-pic">
+        <div>
+            <p>Kalani Prabodha is a dedicated Data Scientist with a strong background in Software Engineering. With a passion for data-driven solutions and a knack for technology, Kalani excels in transforming complex datasets into actionable insights.</p>
+            <div class="social-links">
             <a href="https://www.linkedin.com/in/kalani-prabodha"><img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3ELinkedin%3C/title%3E%3Cdesc%3EA color styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='%230077b7' d='M1.15 21.7h13V61h-13zm46.55-1.3c-5.7 0-9.1 2.1-12.7 6.7v-5.4H22V61h13.1V39.7c0-4.5 2.3-8.9 7.5-8.9s8.3 4.4 8.3 8.8V61H64V38.7c0-15.5-10.5-18.3-16.3-18.3zM7.7 2.6C3.4 2.6 0 5.7 0 9.5s3.4 6.9 7.7 6.9 7.7-3.1 7.7-6.9S12 2.6 7.7 2.6z'%3E%3C/path%3E%3C/svg%3E" alt="Linkedin" /></a>
             <a href="https://github.com/kalani9uggalle"><img src="https://media.licdn.com/dms/image/C560BAQFmuLSyL1nlPA/company-logo_200_200/0/1678231359043/github_logo?e=1717027200&v=beta&t=s1m2w_kVMUK9l0Nlz20FXeAS_dQsyZ6GlNPMgLuYhx8" alt="GitHub"></a>
             <a href="https://www.hackerrank.com/profile/kalani9uggalle"><img src="https://media.licdn.com/dms/image/D560BAQE8MivsmbT7Ig/company-logo_200_200/0/1705561459405/hackerrank_logo?e=1717027200&v=beta&t=2koigfjY6kyQRmyAmCW9J_p4pJd0bCJ9AqWZdJYNz_Q" alt="HackerRank" alt="Hackerrank"></a>
             
             
         </div>
+        </div>
+    </div>
+       
     </section>
 
     <section id="projects" class="container">
