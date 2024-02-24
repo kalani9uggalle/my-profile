@@ -105,6 +105,33 @@ section {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+ /* Add the project card styling */
+.project-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    color: #333;
+    margin: 0 0 10px 0;
+}
+
+.project-card span {
+    display: block;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.project-card p {
+    font-size: 0.95em;
+    line-height: 1.6;
+    color: #444;
+}
 
 .certification-logos ul {
     list-style: none;
@@ -195,9 +222,22 @@ footer {
     </section>
 
     <section id="projects" class="container">
-        <h2>Projects</h2>
-        <p>Describe your key projects here, providing links if available. This could include data analysis projects, machine learning models, or any other relevant work.</p>
-    </section>
+    <h2>Projects</h2>
+
+    <div class="project-card">
+        <h3>Automated Protein Function Prediction | Group of 3 members</h3>
+        <span>May 2022 – Present</span>
+        <p>A Deep Learning approach for predicting the function of a novel protein...</p>
+    </div>
+
+    <div class="project-card">
+        <h3>EasyCart | Group of 3 members</h3>
+        <span>Jul 2020 – May 2021</span>
+        <p>A smart shopping system for supermarkets. It consists of a smart shopping cart...</p>
+    </div>
+
+    <!-- Repeat for other projects -->
+</section>
 
     <section id="experience" class="container">
         <h2>Experience</h2>
