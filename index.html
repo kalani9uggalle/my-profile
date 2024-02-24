@@ -62,21 +62,29 @@ nav ul li a:hover {
     background-color: #ddd;
 }
 
+/* Adjusting the About Me section container to align content to the left */
+#about {
+    text-align: left;
+}
+
+/* Adjusting the profile picture styles for left alignment */
 #profile-pic {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    display: block;
-    margin: 20px auto;
-    border: 5px solid #0779e4; /* Solid blue border */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    
+    display: inline-block; /* Changed from block to inline-block */
+    vertical-align: top; /* Aligns the top of the image with the top of the text */
+    margin-right: 20px; /* Adds some space between the image and the about text */
 }
 
+/* Ensuring social links are aligned with the profile picture */
 .social-links {
-    text-align: center;
-    margin-top: 20px;
+    display: inline-block; /* Allows the social links to align next to the profile picture */
+    vertical-align: top; /* Aligns the top of the social links with the top of the profile picture */
+    padding: 0; /* Adjust padding as needed */
+    margin: 0; /* Adjust margin as needed, especially to remove any top margin that may offset alignment */
 }
+
 
 .social-links img {
     width: 24px;
