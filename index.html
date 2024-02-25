@@ -113,10 +113,15 @@ section {
     justify-content: center;
 }
 
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* This sets the space between the cards and rows */
+    justify-content: flex-start; /* Aligns cards to the start of the container */
+}
+
 .project-card {
-    flex: 1; /* Allows cards to grow */
-    min-width: 300px; /* Minimum width of the cards */
-    max-width: calc(50% - 20px); /* Adjust width to fit 2 cards per row, accounting for the gap */
+    flex: 0 0 48%; /* Do not grow or shrink, and start off with 48% of the container's width */
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -127,7 +132,8 @@ section {
 
 @media (max-width: 768px) {
     .project-card {
-        max-width: calc(100% - 20px); /* Full width on smaller screens */
+        flex: 0 0 100%; /* On smaller screens, each card takes full width */
+        max-width: 100%; /* Ensures the card doesn't exceed the container's width */
     }
 }
 .project-card h3 {
